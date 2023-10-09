@@ -1,0 +1,128 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+.header {
+    background-color: #3498db;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo do título no cabeçalho */
+.header h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Estilo do nome do usuário logado */
+#user {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Estilo do menu */
+#menu {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo do título do menu */
+#title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo das linhas do menu */
+.menu-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilo dos itens do menu */
+.menu-item {
+    flex: 0 0 calc(32% - 10px);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo dos links e ícones */
+.menu-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Estilo dos ícones */
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 80px;
+}
+
+/* Estilo do texto abaixo dos ícones */
+.menu-item span {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Estilo dos botões */
+.menu-item button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-item button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: #ffffff;
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Formatações Gerais */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Formatando a Section */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #222e3b;
+}
+
+.form-caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: #27333f;
+    border-radius: 10px;
+    box-shadow: 5px 5px 50px;
+}
+
+.form-caixa h2 {
+    font-size:  2em;
+    color: #fff;
+    text-align: center;
+}
+
+.input-caixa {
+    position: relative;
+    margin: 30px 0px;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.input-caixa label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+}
+
+/* Utilizadol o Webkit Autofill para pegar os preenchimentos automaticos do navegador */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #27333f inset;
+    -webkit-text-fill-color: #fff !important;
+}
+
+.input-caixa input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0px 25px 0px 5px;
+    color: #fff;
+}
+
+
+.input-caixa ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.esquecer {
+    margin: -15px 0px 15px;
+    font-size: 0.9em;
+    color: #fff;
+    /*display: flex; */
+    /*justify-content: center; */
+}
+
+.esquecer label input {
+    margin-right: 3px;
+}
+
+.esquecer label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.esquecer label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.registrar {
+    position: relative;
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0px 10px;
+    transition: 0.5s;
+}
+
+.registrar p a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.registrar p a:hover {
+    text-decoration: underline;
+}
+
+
+.form-value.registro {
+    transform: translateY(-500px);
+}

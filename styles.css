@@ -1,0 +1,61 @@
+        /*  CSS  */
+        body {
+            padding-top: 50px; /* Espaço para a logomarca */
+            background-color: #f8f9fa; /* Cor de fundo para o corpo */
+        }
+        .logo {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .formulario {
+            margin: 20px auto;
+            max-width: 400px;
+            background-color: #ffffff; /* Cor de fundo do formulário */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            animation: fade-in 0.5s ease-in-out forwards; /* Animar o formulário com fade-in */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+ 
+h2 {
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #343a40; 
+            color: #ffffff; 
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-out {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .fade-in {
+            animation: fade-in 0.5s ease-in-out forwards;
+        }
+
+        .fade-out {
+            animation: fade-out 0.5s ease-in-out forwards;
+
+        }
